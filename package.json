@@ -1,0 +1,31 @@
+{
+  "name": "gulptask-deploy-ftp",
+  "version": "0.0.1",
+  "description": "Web page deployment tasks for FTP.",
+  "main": "./bin/index.js",
+  "types": "./bin/index.d.ts",
+  "repository": "https://MasatoMakino@github.com/MasatoMakino/gulptask-deploy-ftp.git",
+  "author": "MasatoMakino <unagiinu.g@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ftp-deploy": "^2.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "gulp": "^4.0.2",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "tsc --watch",
+    "run": "gulp staging"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
