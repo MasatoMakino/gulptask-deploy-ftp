@@ -2,7 +2,19 @@ import { FTPDeployOption, Option, OptionInitializer } from "./Option";
 const FtpDeploy = require("ftp-deploy");
 const ftpDeploy = new FtpDeploy();
 
+/**
+ * @deprecated Use generateTasks
+ * @param option
+ */
 export function get(option: Option) {
+  return generateTasks(option);
+}
+
+/**
+ *
+ * @param option
+ */
+export function generateTasks(option: Option) {
   option = OptionInitializer.init(option);
 
   const staging = () => {
