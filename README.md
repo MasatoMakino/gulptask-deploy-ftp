@@ -38,7 +38,7 @@ The next step is to write `gulpfile.js`.
 const os = require("os");
 const path = require("path");
 
-const { deploy } = require("gulptask-deploy-ftp").get({
+const { deploy } = require("gulptask-deploy-ftp").generateTasks({
   authFilePath: path.resolve(os.homedir(), ".ftp_auth", "auth.json"),
 });
 
