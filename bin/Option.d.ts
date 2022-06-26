@@ -12,9 +12,24 @@ interface AuthOption {
  * タスク取得オプション
  */
 export interface Option {
+    /**
+     * FTPアカウント情報のjsonファイルパス
+     */
     authFilePath: string;
+    /**
+     * リモートのステージング環境用ディレクトリ
+     * @default : {@link OptionDefault.stagingDir}
+     */
     stagingDir?: string;
+    /**
+     * ローカルのルートディレクトリ
+     * @default : "dist"
+     */
     root?: string;
+    /**
+     * アップロードから除外するファイル
+     * @default : {@link OptionDefault.exclude}
+     */
     exclude?: string[];
 }
 /**
