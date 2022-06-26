@@ -10,12 +10,14 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.OptionInitializer = exports.OptionDefault = void 0;
@@ -50,7 +52,7 @@ var OptionInitializer = /** @class */ (function () {
     };
     OptionInitializer.getStagingOption = function (option) {
         var auth = this.getAuth(option);
-        return __assign(__assign({}, auth), { localRoot: option.root, remoteRoot: path.posix.join(auth.remoteRoot, option.stagingDir), include: ["*"], exclude: __spreadArrays(option.exclude, [".htaccess"]), forcePasv: true });
+        return __assign(__assign({}, auth), { localRoot: option.root, remoteRoot: path.posix.join(auth.remoteRoot, option.stagingDir), include: ["*"], exclude: __spreadArray(__spreadArray([], option.exclude, true), [".htaccess"], false), forcePasv: true });
     };
     OptionInitializer.getDeployOption = function (option) {
         var auth = this.getAuth(option);

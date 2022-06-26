@@ -1,3 +1,7 @@
+/**
+ * gulptask-deploy-ftpを利用するgulpfile.jsのサンプルです。
+ **/
+
 const os = require("os");
 const path = require("path");
 
