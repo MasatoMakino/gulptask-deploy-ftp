@@ -1,7 +1,7 @@
 {
   "name": "gulptask-deploy-ftp",
   "version": "0.0.2",
-  "description": "Web page deployment tasks for FTP.",
+  "description": "Thin ftp-deploy wrapper for gulp.js",
   "main": "./bin/index.js",
   "types": "./bin/index.d.ts",
   "repository": "https://MasatoMakino@github.com/MasatoMakino/gulptask-deploy-ftp.git",

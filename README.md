@@ -1,6 +1,6 @@
 # gulptask-deploy-ftp
 
-> Web page deployment tasks for FTP.
+> Thin ftp-deploy wrapper for gulp.js
 
 ## Getting Started
 
