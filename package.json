@@ -1,6 +1,6 @@
 {
   "name": "gulptask-deploy-ftp",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Thin ftp-deploy wrapper for gulp.js",
   "main": "./bin/index.js",
   "types": "./bin/index.d.ts",
