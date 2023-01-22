@@ -2,6 +2,9 @@
 
 > Thin ftp-deploy wrapper for gulp.js
 
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+[![Build](https://github.com/MasatoMakino/gulptask-deploy-ftp/actions/workflows/buildJS.yml/badge.svg)](https://github.com/MasatoMakino/gulptask-deploy-ftp/actions/workflows/buildJS.yml)
+
 ## Getting Started
 
 ### Install
