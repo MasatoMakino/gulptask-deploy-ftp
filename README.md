@@ -1,5 +1,13 @@
 # gulptask-deploy-ftp
 
+> **Warning**
+>
+> This project has been archived. Please consider it as an alternative.
+>
+> [ftp-deploy](https://www.npmjs.com/package/ftp-deploy)
+>
+> [ftp-deploy-cli](https://www.npmjs.com/package/ftp-deploy-cli)
+
 > Thin ftp-deploy wrapper for gulp.js
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
